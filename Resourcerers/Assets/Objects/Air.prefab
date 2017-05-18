@@ -24,7 +24,7 @@ GameObject:
   - component: {fileID: 50727456082413078}
   - component: {fileID: 114423793197264990}
   m_Layer: 0
-  m_Name: Fire
+  m_Name: Air
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -120,7 +120,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: c9ad924b9d07e4a58a2b750167aa3032, type: 3}
+  m_Sprite: {fileID: 21300006, guid: c9ad924b9d07e4a58a2b750167aa3032, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
