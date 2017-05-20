@@ -47,6 +47,21 @@ TagManager:
   - name: Wall
     uniqueID: 2438948587
     locked: 0
+  - name: Item
+    uniqueID: 1493823901
+    locked: 0
+  - name: Actor Front
+    uniqueID: 806717719
+    locked: 0
+  - name: Actor Hand
+    uniqueID: 620710013
+    locked: 0
+  - name: Projectile
+    uniqueID: 3656395591
+    locked: 0
+  - name: Actor Back
+    uniqueID: 397786313
+    locked: 0
   - name: Default
     uniqueID: 0
     locked: 0

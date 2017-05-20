@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class cameraController : MonoBehaviour {
+public class CameraController : MonoBehaviour {
 
     public float speed = 1.5f;
     public GameObject object1;
@@ -35,12 +35,9 @@ public class cameraController : MonoBehaviour {
                 object2.transform.position.y);
         }
 
-        cameraPosition.x = (position1.x + position2.x)*0.3f;
-        cameraPosition.y = (position1.y + position2.y)*0.3f;
-        lerp = Vector2.Lerp(transform.position, cameraPosition, speed);
-		transform.position = (position1 + position2) / 2;
-		transform.position += Vector3.back*10;
-       // offset = new Vector3(lerp.x, lerp.y, -10);
-       // transform.position = offset;
+        cameraPosition = (position1 + position2)/2;
+        lerp = Vector2.Lerp(transform.position, object1.transform.position, speed);
+        offset = new Vector3(lerp.x, lerp.y, -10);
+        transform.position = offset;
     }
 }
