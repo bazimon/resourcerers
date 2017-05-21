@@ -40,7 +40,8 @@ public class ShootScript : MonoBehaviour {
             //projectileScript.velocity = dir * speed;
             projectileScript.SetSpeed(speed);
             projectileScript.SetSpeedDir(dir);
-            projectileScript.damage = damage;
+			projectileScript.SetRotation (dir);
+			projectileScript.damage = damage;
         }
     }
 

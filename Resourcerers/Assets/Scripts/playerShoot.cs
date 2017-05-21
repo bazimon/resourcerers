@@ -7,7 +7,7 @@ public class playerShoot : MonoBehaviour {
     public GameObject projectile;
     public GameObject deathParticle;
     public float speed;
-    public float damage;
+    public int damage;
 
     private Vector3 mousePos;
     private Vector2 dir;

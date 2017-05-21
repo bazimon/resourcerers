@@ -23,7 +23,7 @@ GameObject:
   - component: {fileID: 58074251061456442}
   - component: {fileID: 50727456082413078}
   - component: {fileID: 114423793197264990}
-  m_Layer: 0
+  m_Layer: 20
   m_Name: Fire
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -37,7 +37,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1232374635514970}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.7289059, y: -0.4031108, z: 0}
+  m_LocalPosition: {x: -0.83596593, y: -0.018621355, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -74,9 +74,10 @@ CircleCollider2D:
   m_Material: {fileID: 0}
   m_IsTrigger: 1
   m_UsedByEffector: 0
-  m_Offset: {x: 0, y: 0}
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.0026150346, y: 0}
   serializedVersion: 2
-  m_Radius: 0.15
+  m_Radius: 0.18399549
 --- !u!114 &114423793197264990
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -90,6 +91,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   damage: 0
   speed: 0
+  piercing: 0
+  pushback: 0
 --- !u!212 &212220765021644334
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -120,8 +123,13 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -638571705
+  m_SortingLayer: -2
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 0cbec1f507003c047af0eecca918a61e, type: 3}
+  m_Sprite: {fileID: 21300000, guid: c9ad924b9d07e4a58a2b750167aa3032, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 1, y: 1}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0

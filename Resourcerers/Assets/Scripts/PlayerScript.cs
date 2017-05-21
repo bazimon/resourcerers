@@ -63,35 +63,22 @@ public class PlayerScript : MonoBehaviour{
     }
 
     private void Update()
-    {
-        TimerCountdown();
-        if (Input.GetButtonDown("Fire1"))
-        {
-            shootScript.Shoot(0, 0);
-        }
-        if (Input.GetButtonDown("Fire2"))
-        {
+	{
+		TimerCountdown ();
+		if (Input.GetButtonDown ("Fire1")) {
+			shootScript.Shoot (0, 0);
+		}
+		if (Input.GetButtonDown ("Fire2")) {
 
-        }
-        if (Input.GetButtonDown("Jump") && !dodging)
-        {
-            anim.SetInteger("State", 2);
-            dodgeH = Input.GetAxisRaw("Horizontal");
-            dodgeV = Input.GetAxisRaw("Vertical");
-            dodgeTimer = dodgeTime;
-            dodging = true;
-        }
-    }
-
-    private void OnCollisionEnter2D(Collision2D col)
-    {
-        switch (col.gameObject.tag)
-        {
-            case "Wall":
-
-                break;
-        }
-    }
+		}
+		if (Input.GetButtonDown ("Jump") && !dodging) {
+			anim.SetInteger ("State", 2);
+			dodgeH = Input.GetAxisRaw ("Horizontal");
+			dodgeV = Input.GetAxisRaw ("Vertical");
+			dodgeTimer = dodgeTime;
+			dodging = true;
+		}
+	}
 
     private void Movement(float speed)
     {

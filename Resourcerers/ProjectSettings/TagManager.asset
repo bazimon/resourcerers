@@ -21,20 +21,20 @@ TagManager:
   - 
   - 
   - 
+  - Monster
+  - Monster's Attack
+  - 
+  - 
+  - 
+  - 
+  - Player
+  - Player's Attack
   - 
   - 
   - 
   - 
   - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
+  - Wall Collision
   - 
   - 
   - 
